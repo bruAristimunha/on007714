@@ -1,2 +1,12 @@
+1.0.1 2026-11-18
+  - dataset_description.json: template placeholders replaced or removed; License written as SPDX "CC0-1.0"
+  - dataset_description.json Authors -> the creators of the OpenNeuro record doi:10.18112/openneuro.ds007714.v1.0.0 (datacite.yml data.attributes.creators)
+  - dataset_description.json ReferencesAndLinks, HowToAcknowledge -> the OpenNeuro record doi:10.18112/openneuro.ds007714.v1.0.0
+  - participants.tsv: 11 rows for subjects with no sub-* folder removed (BIDS validator)
+  - channels.tsv: channel names aligned with the SNIRF measurement list (mne_bids channel mismatch)
+  - *_coordsystem.json: NIRSCoordinateSystemDescription added (required for "Other")
+  - *_nirs.json RecordingDuration, RecordingType -> computed from the SNIRF time vector of each recording
+  - README.md "Data notes" -> the published sub-s45 SNIRF file (annex key size, HDF5 superblock) and the events.tsv files
+  - Not in this text change (data files): SNIRF TimeUnit/LengthUnit/dataUnit made SNIRF v1.1 compliant; sub-s45 SNIRF truncated (replace or remove)
 1.0.0 2026-04-27
   - Added authors
